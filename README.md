@@ -1,2 +1,2 @@
 # python-tokioschool
-Final project for Python course in Tokio School
+Final project in Python for the Tokyo School Python course
