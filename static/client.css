@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marginContainer {
+    max-width: 80%;
+    margin: auto;
+    background-color: #DBCECE;
+}
+
+.containerNav {
+    display: flex;
+    min-height: 70px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+    justify-content: space-around;
+}
+
+.textPosition {
+    margin: auto 0;
+}
+
+.centerNav {
+    display: flex;
+}
+
+.rightNav {
+    display: flex;
+}
+
+.mainLink {
+    margin: 0;
+}
+
+.firstLink {
+    margin: 0 0 10px 10px;
+}
+
+.secondLink {
+    margin: 0 0 0 10px;
+}
+
+.anchorLink {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+}
+
+.anchorLink:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.titleMain {
+    text-align: center;
+}
+
+.cardNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.card {
+    width: 20rem;
+    border-radius: 1rem!important;
+    margin: 5px 0;
+}
+
+.productImg {
+    height: 270px!important;
+    border-radius: 1rem;
+}
+
+.productImgAirTag {
+    height: 270px!important;
+    border-radius: 1rem;
+    padding: 40px 65px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.textPrecio {
+    margin: auto 10px auto 0;
+}
+
+.card-button {
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .cardNav {
+        display: block;
+    }
+    .card {
+        margin: 20px auto;
+    }
+}
+
+.iconShop {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.comprarsuccess {
+    color: green;
+    text-align: center;
+}
+
+.buttonCrearCont {
+    text-align: center;
+}
+
+.botonCrear {
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.errorCrear {
+    color: red;
+    text-align: center;
+}
+
+.anchorLinkBack {
+    color: white;
+    text-decoration: none;
+}
+
+.anchorLinkBack:hover {
+    color: white;
+}
+
+.buttonBuy {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.svgLogo {
+    height: 70px;
+    width: 140px;
+    margin-left: -100px;
+}

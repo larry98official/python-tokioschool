@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <header>
+
+        <div class='generalContainer'>
+            <div class='marginContainer'>
+
+                <div class="containerNav">
+
+                    <div class="nav">
+
+                        <div class="mainNav">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height: 50px">
+                                    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class='marginContainer'>
+
+            <div class="titleMain">
+                <h1>Hola, aqui puedes efectuar el acceso</h1>
+            </div>
+
+            <div class="correctRegistrationProviderDiv">
+                {% if message %}
+                <p class="correctRegistrationProvider">{{message}}</p>
+                {% endif %}
+            </div>
+
+            <form action="/login" method="post" class="formRegister">
+
+                <div class="logContent">
+                    <div class="logInput">
+                      <input type="text" name="email_usuario" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="logInput">
+                      <input type="password" name="password_usuario" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div>
+                    {% if error %}
+                        <p class="errorRegister">{{error}}</p>
+                    {% endif %}
+                </div>
+                <button type="submit" class="btn btn-primary botonLogin"> <!-- btn-block hace que el boton ocupe to do el ancho -->
+                    Log-in
+                </button>
+
+            </form>
+
+            <div class="registerDiv">
+                <p class="mainLink">
+                    <a class="anchorLink" href="/register">
+                        Si no estas registrato puedes hacerlo aqui.
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class='marginContainer'>
+            <div class="titleMain">
+                <h1>Productos en evidencia</h1>
+            </div>
+            <div class="cardNav">
+                <div class="card">
+                  <img src="../static/imgs/macbook.jpg" class="card-img-top productImg" alt="macbook">
+                  <div class="card-body">
+                    <h5 class="card-title">Macbook PRO</h5>
+                    <p class="card-text">
+                        The most powerful MacBook Pro ever is here.<br>
+                        With the blazing-fast M1 Pro or M1 Max chip,
+                        the first Apple silicon designed for pros,
+                        you get groundbreaking performance and amazing battery life.<br>
+                        Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need.<br>
+                        The first notebook of its kind, this MacBook Pro is a beast.
+                    </p>
+                    <div class="card-button">
+                        <a href="/register" class="btn btn-primary botonLogin">Register and Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../static/imgs/iphonepro13.jpg" class="card-img-top productImg" alt="Iphone 13 PRO">
+                  <div class="card-body">
+                      <h5 class="card-title">Iphone 13 PRO</h5>
+                      <p class="card-text">
+                          A dramatically more powerful camera system.<br>
+                          A display so responsive, every interaction feels new again.<br>
+                          The world’s fastest smartphone chip. Exceptional durability.<br>
+                          And a huge leap in battery life.<br>
+                          Let’s Pro.
+                      </p>
+                      <div class="card-button">
+                          <a href="/register" class="btn btn-primary botonLogin">Register and Buy</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="../static/imgs/applewatchseries-7.jpg" class="card-img-top productImg" alt="Apple Watch">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple Watch Series 7</h5>
+                    <p class="card-text">
+                        Big screen.<br>
+                        Huge impact.<br>
+                        The challenge was to create a bigger display while barely expanding the dimensions of the watch itself.<br>
+                        To do so, the display was completely re‑engineered reducing the borders by 40%, allowing for more screen area than both Series 6 and Series 3.<br>
+                        Now that’s something to smile about.
+                    </p>
+                    <div class="card-button">
+                        <a href="/register" class="btn btn-primary botonLogin">Register and Buy</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

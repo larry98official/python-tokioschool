@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marginContainer {
+    max-width: 80%;
+    margin: auto;
+    background-color: #DBCECE;
+}
+
+.containerNav {
+    display: flex;
+    min-height: 70px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+    justify-content: space-around;
+}
+
+.textPosition {
+    margin: auto 0;
+}
+
+.centerNav {
+    display: flex;
+}
+
+.rightNav {
+    display: flex;
+}
+
+.mainLink {
+    margin: 0;
+}
+
+.firstLink {
+    margin: 0 0 10px 10px;
+}
+
+.secondLink {
+    margin: 0 0 0 10px;
+}
+
+.anchorLink {
+    color: black;
+    text-decoration: none;
+}
+
+.anchorLink:hover {
+    color: black;
+    text-decoration: underline
+}
+
+.titleMain {
+    text-align: center;
+}
+
+.crearContent {
+    text-align: center;
+}
+
+.crearInput {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 30%;
+}
+
+.inputImg {
+    margin: 10px 10px;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.buttonCrearCont {
+    text-align: center;
+}
+
+.botonCrear {
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.errorCrear {
+    color: red;
+    text-align: center;
+}
+
+.anchorLinkBack {
+    color: white;
+    text-decoration: none;
+}
+
+.anchorLinkBack:hover {
+    color: white;
+}
+
+.errorDiv {
+    height: 40px;
+}
+
+.svgLogo {
+    height: 70px;
+    width: 140px;
+    margin-left: -100px;
+}

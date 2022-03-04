@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marginContainer {
+    max-width: 80%;
+    margin: auto;
+    background-color: #DBCECE;
+}
+
+.containerNav {
+    display: flex;
+    min-height: 70px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.mainNav {
+    display: flex;
+}
+
+.titleMain {
+    text-align: center;
+}
+
+.logContent {
+    text-align: center;
+}
+
+.formRegister {
+    text-align: center!important;
+}
+
+.logInput {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 30%;
+}
+
+.form-select {
+    max-width: 30%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.botonRegistracion {
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.errorRegister {
+    color: red;
+}
+
+.anchorLinkBack {
+    color: white;
+    text-decoration: none;
+}
+
+.anchorLinkBack:hover {
+    color: white;
+}
+
+.svgLogo {
+    height: 70px;
+    width: 140px;
+    margin-left: -100px;
+}
